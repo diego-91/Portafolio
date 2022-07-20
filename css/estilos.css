@@ -1,0 +1,27 @@
+body{
+	background: url("../imagenes/background-image.jpg");
+	background-size: cover;
+}
+.header{
+	background: rgba(255,255,255, 0.15);
+	height: 170px;
+}
+	.col-nav{
+		width: 470px;
+	}
+		.container li a{
+			background: rgba(255,255,255, 0.15);
+			border-radius: 2px;	
+			color: white;
+			display: block;
+			font-family: 'Lato', sans-serif;
+			padding-bottom: 5px;			
+			padding-top: 4px;
+			text-align: center;
+			text-decoration: none;
+			width: 110px;		
+		}
+			.container li a:hover{
+				background: transparent;
+				transition: 0.8s;
+			}
