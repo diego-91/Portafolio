@@ -6,12 +6,13 @@ body{
 	background-color: rgba(255,255,255, 0.2);
 	height: 160px;
 	margin-top: -200px;
+	z-index: 1;
 }
 	.col-nav{
 		width: 470px;
+		position: relative;	
 	}
 		.container li a{
-			background: rgba(255,255,255, 0.15);
 			border-radius: 2px;	
 			color: white;
 			display: block;
@@ -20,137 +21,255 @@ body{
 			padding-top: 4px;
 			text-align: center;
 			text-decoration: none;
-			width: 110px;		
+			width: auto;		
 		}
-			.container li a:hover{
-				background: transparent;
-				transition: 0.9s;
-			}
+		.container li a:hover{
+			color: rgba(255, 255, 255, 0.7);
+			transition: 0.4s;
+		}
+		.container li .v-line_item1{
+			background: rgb(0,170,152);
+			height: 60%;
+			left: 19.5%;
+			position: absolute;
+			width: 0.3%;
+			top: 21%;
+		}
+		.container li .v-line_item2{
+			background: rgb(0,170,152);
+			height: 60%;
+			left: 49.6%;
+			position: absolute;
+			width: 0.5%;
+			top: 21%;
+		}
+		.container li .v-line_item3{
+			background: rgb(0,170,152);
+			height: 60%;
+			left: 77.3%;
+			position: absolute;
+			width: 0.3%;
+			top: 21%;
+		}
 .sobre_mi{
 	margin-bottom: 200px;
 	margin-top: 200px;
+	text-align: center;
 	}
-	.sobre_mi article .marco_verde{
-		color: rgb(0,170,152);
-		border: solid 2px;
-		height: 520px;
-		margin-bottom: 100px;
-		width: 420px;
+	.sobre_mi article img{
+	border-radius: 4px;
+	filter: grayscale(80%);
+	height: 490px;	
+	margin-bottom: 100px;
+	width: 25%; 
+	z-index: -2;
+	position: relative;
 	}
-	.sobre_mi article h2{
-		color: white;
-		font-family: 'Montserrat', sans-serif;
-		font-size: 100px;
-		font-weight: 300;
+	.fondo{
+		height: 490px;
+		background-image: linear-gradient(to left, rgba(255,255,255,0), rgba(0,0,0,0.9));
+		border-radius: 4px;
+		margin: auto;		
+		width: 335px;
+		z-index: -2;
+		position: absolute;
+		left: 504px;
+		top: 200px;
 	}
-		.sobre_mi article h2 span{
-			color: rgb(0,170,152);
-		}
-	.sobre_mi article .descripción{
-		background: rgba(255,255,255, 0.15);
-		padding: 90px;
-	}
-		.sobre_mi article .descripción p{
+		.sobre_mi article h2{
 			color: white;
 			font-family: 'Montserrat', sans-serif;
-			font-size: 23px;
+			font-size: 100px;
 			font-weight: 300;
 		}
-	.contenedor_habilidades{
-		margin-bottom: 200px;
-	}
+		.sobre_mi article span{
+			color: rgb(0,170,152);
+		}
+		.sobre_mi article .descripción{
+			background: rgba(255,255,255, 0.15);
+			padding: 90px;
+		}
+			.sobre_mi article .descripción p{
+				color: white;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 23px;
+				font-weight: 300;
+			}
+			.sobre_mi article .descripción .click{
+				border-radius: 4px;
+				border: solid 2px rgb(0,170,152);
+				color: white;
+				display: inline-block;
+				font-family: 'Montserrat', sans-serif;
+				height: 47px;
+				margin: auto;
+				padding-top: 9px;
+				text-decoration: none;
+				width: 190px;
+			}
+			.sobre_mi article .descripción .click:hover{
+				border: solid 2px rgba(0,170,152, 0.6);
+				transition: 0.5s;
+			}
+.contenedor_habilidades{
+	margin-bottom: 190px;
+	position: relative;
+}
 	.contenedor_habilidades h2{
 		color: white;
 		font-family: 'Montserrat', sans-serif;
 		font-size: 70px;
 		font-weight: 300;
-		margin-bottom: 100px;
 	}
-	.contenedor_habilidades .articles{
-		padding-right: 12%;
-		padding-left: 12%;
-	}
-	.contenedor_habilidades h3{
-		color: white;
-		font-family: 'Montserrat', sans-serif;
-		font-size: 25px;
-		font-weight: 300;
-		margin-bottom: 37px;
-		padding-bottom: 4px;
-		padding-top: 4px;
+		.contenedor_habilidades .articles{
+			padding-right: 12%;
+			padding-left: 12%;
+			margin-bottom: 100px;
 		}
-	.contenedor_habilidades .v-line1{
-		border-left: solid 3px rgb(0,170,152);
- 		height:50%;
- 		left: 39%;
- 		position: absolute;
- 		top: 288%;
-	}
-	.contenedor_habilidades .v-line2{
-		border-left: solid 3px rgb(0,170,152);
- 		height:50%;
- 		left: 61%;
- 		position: absolute;
- 		top: 288%;
- 		background: red;
-	}
-	.mis_proyectos{
-		margin-bottom: 220px;
-	}
+		.contenedor_habilidades .habilidades{
+			margin-bottom: 100px;
+		}
+			.contenedor_habilidades h3{
+				color: white;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 25px;
+				font-weight: 300;
+				margin-bottom: 37px;
+				padding-bottom: 4px;
+				padding-top: 4px;
+				}
+			.contenedor_habilidades .v-line1{
+				border-left: solid 2px rgb(0,170,152);
+		 		height:62%;
+		 		left: 37.1%;
+		 		position: absolute;
+		 		top: 20%;
+			}
+			.contenedor_habilidades .v-line2{
+				border-left: solid 2px rgb(0,170,152);
+		 		height:62%;
+		 		left: 62.7%;
+		 		position: absolute;
+		 		top: 20%;
+			}
+		.ver_mas{
+			border: solid 2px rgb(0,170,152);
+			border-radius: 4px;
+			color: white;
+			display: inline-block;
+			font-family: 'Montserrat', sans-serif;
+			height: 47px;
+			margin: auto;
+			padding-top: 9px;
+			text-decoration: none;
+			width: 190px;
+		}
+		.ver_mas:hover{
+			border: solid 2px rgba(0,170,152,0.6);
+			color: white;
+			transition: 0.5s;
+		}
+.mis_proyectos{
+	margin-bottom: 200px;
+}
 	.mis_proyectos h2{
 		color: white;
 		font-family: 'Montserrat', sans-serif;
 		font-size: 70px;
 		font-weight: 300;
+		margin-bottom: 100px;
 	}
-	.mis_proyectos article .container_image{
-		box-sizing: border-box;
-		height: 205px;
-		margin: auto;
-		position: relative;
-		width: 405px;
-	}
-	.mis_proyectos article .container_image a{
-		background: rgba(255,255,255, 0.15);
+		.mis_proyectos article .container_image{
+			box-sizing: border-box;
+			height: 205px;
+			margin: auto;
+			position: relative;
+			width: 405px;				
+		}
+			.mis_proyectos article .container_image a{
+				background: rgba(255,255,255, 0.15);
+				color: white;
+				display: block;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 25px;
+				height: 100%;
+				left: 0%;
+				padding-top: 21%;
+				position: absolute;
+				text-decoration: none;
+				opacity: 0;
+				top: 0%;
+				width: 100%;
+			}
+			.mis_proyectos article .container_image:hover a{
+				transition: 0.9s;
+				opacity: 1 ;
+			}
+.hablamos{
+	margin-bottom: 200px;
+}
+	.hablamos h2{
 		color: white;
-		display: block;
 		font-family: 'Montserrat', sans-serif;
-		font-size: 25px;
-		height: 100%;
-		left: 0%;
-		padding-top: 21%;
-		position: absolute;
-		text-decoration: none;
-		opacity: 0;
-		top: 0%;
-		width: 100%;
-		
+		font-size: 70px;
+		font-weight: 300;
+		margin-bottom: 100px;
 	}
-	.mis_proyectos article .container_image:hover a{
-		transition: 0.9s;
-		opacity: 1;
-	}
-	footer{
-		background: rgba(255,255,255, 0.15);
+	.hablamos p a{
+		border: 3px solid rgb(0,170,152);
+		border-radius: 4px;
+    	color: white;
+		display: inline-block;
+		font-family: 'Lato', sans-serif;
+		font-size: 50px;
+		font-weight: 300;		
 		height: 200px;
+		padding-top: 55px;
+		text-decoration: none;
+		width: 630px;
+	}
+	.hablamos p a:hover{
+		border: solid 3px rgba(0,170,152,0.4);
+		transition: 0.6s;
+	}
+footer{
+	background: rgba(255,255,255, 0.15);
+	height: 230px;
+	list-style-type: none;
+	position: relative;
+}
+	footer .final_links{
+		width: 38%;
 	}
 		footer li a{
 			color: white;
-			font-family: 'Montserrat', sans-serif;
-			font-size: 21px;
-			font-weight: 300;
 			text-decoration: none;
+			font-family:'Lato', sans-serif;
+			font-size: 22px;
+			font-weight: 300;
 		}
 		footer li a:hover{
-			color: rgba(255,255,255, 0.7);
-			transition: 0.3s;
+			color: rgba(255,255,255, 0.6);
+			transition: 0.4s;
 		}
-		h1{
-			color: red;
+		footer .v-line_link1{
+			background-color: rgb(0,170,152);
+			height: 15%;
+			right:56.2%;
+			position: absolute;
+			top: 34%;
+			width: 0.2%;			
 		}
-
-	
-	
-
-
-	
+		footer .v-line_link2{
+			background-color: rgb(0,170,152);
+			height: 15%;
+			right: 44%;
+			position: absolute;
+			top: 34%;
+			width: 0.13%;
+		}
+	footer .container span{
+		color: white;
+		font-family: 'Lato', sans-serif;
+		font-size: 16px;
+	}

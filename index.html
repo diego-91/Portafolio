@@ -39,15 +39,18 @@
 						<!--menu-->
 				<div class="row">
 					<div class="col-md-12 col-nav pt-3">  
-						<ul class="navbar container-menu list-unstyled"> <!--list-unstyled quita las viñetas de los item-list-->
+						<ul class="navbar container-menu list-unstyled"> 
 							<li>
 								<a class="" href="Sobre mi.html">Sobre mi</a>
+								<div class="v-line_item1"></div>
 							</li>
 							<li>
 								<a href="Habilidades.html">Habilidades</a>
+								<div class="v-line_item2"></div>
 							</li>
 							<li>
 								<a href="Proyectos.html">Proyectos</a>	
+								<div class="v-line_item3"></div>
 							</li>
 							<li>
 								<a href="Hablamos?.html">Hablamos?</a>
@@ -59,44 +62,46 @@
 		</nav>
 			<section class="sobre_mi">
 				<article>
-					<div class="container marco_verde justify-content-center">
-						<img src="">
-					</div>
+					<img src="imagenes/foto.jpg">
+					<div class="fondo"></div>
 					<div class="container text-center">
-						<h2><span>Hola!</span> Soy Diego<br>Maquetador web</h2>		
+						<h2>Hola!</span> Soy <span>Diego</span><br>Maquetador web</h2>		
 					</div>
 					<div class="container-fluid descripción text-center ">
 						<div class="container ">
 							<p>
 								Hola! soy Diego y soy maquetador web. Soy de Buenos Aires, Argentina y estoy en el mundo IT hace 5 años. Desarrollo sitios web de cualquier tamaño y contenido usando herramientas front-end. Pongo mi creatividad y conocimientos al servicio de quien me necesite amoldandome a sus preferencias.
 							</p>
+							<a class="click" href="sobre_mi.html">Leer más</a>
 						</div>
 					</div>
 				</article>
 			</section>
-			<section class="container contenedor_habilidades text-center">                           					<h2>Algunas de mis habilidades son</h2>
+			<section class="container contenedor_habilidades text-center">                           				<h2>Algunas de mis habilidades son</h2>
 					<div class="container articles ">
-						<div class="row">
-						<article class="col-md-4 col-sm-4 col-xs-12">
-							<h3>HTML5</h3>
-							<img src="imagenes/logo_html5.png" alt="html5"/>
-							<div class="v-line1"></div>
-						</article>											    
-						<article class="css3 col-md-4 col-sm-4 col-xs-12">
-							<h3>CSS3</h3>
-							<img src="imagenes/logo_css3.png"/>
-							<div class="v-line2"></div>
-						</article>						
-						<article class="bootstrap col-md-4 col-sm-4 col-xs-12">
-							<h3>BOOTSTRAP</h3>
-							<img src="imagenes/logo_bootstrap.png"/>
-						</article>
+						<div class="row habilidades">
+							<article class="col-md-4 col-sm-4 col-xs-12">
+								<h3>HTML5</h3>
+								<img src="imagenes/logo_html5.png" alt="html5"/>
+								<div class="v-line1"></div>
+							</article>
+							<article class="css3 col-md-4 col-sm-4 col-xs-12">
+								<h3>CSS3</h3>
+								<img src="imagenes/logo_css3.png"/>
+								<div class="v-line2"></div>
+							</article>						
+							<article class="bootstrap col-md-4 col-sm-4 col-xs-12">
+								<h3>BOOTSTRAP</h3>
+								<img src="imagenes/logo_bootstrap.png"/>
+							</article>
+						</div>
+						<a class="ver_mas" href="habilidades.html">Ver más</a>
 					</div>
-				</div>
+					
 			</section>
 			<section class="mis_proyectos text-center">
 				<article>
-					<h2 class="mb-5">Mis proyectos</h2>
+					<h2>Mis proyectos</h2>
 					<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
 					  <div class="carousel-inner">
 					    <div class="carousel-item active ">
@@ -116,35 +121,43 @@
 					</div>
 				</article>
 			</section>
-			<footer class= "container-fluid d-flex justify-content-around align-items-center">				
-					<div class="row ">
-						<div class="col-md-4 col-sm-4 col-xs-12 ">
-							<li class="">
+			<section class="hablamos container text-center">
+				<article>
+					<h2>Hablamos?</h2>
+					<p><a href="hablamos.html">Clickeá acá</a></p>
+				</article>
+				
+			</section>
+			<footer class="pt-5">	
+				<div class="container-fluid d-flex text-center justify-content-center mb-5 mt-4">	
+					<div class="row  mb-4 mt-2 final_links">
+						<div class="col-md-4 col-sm-4 col-xs-12 w-25 mx-auto">
+							<li>
 								<a href="Home.html">Home</a>
 							</li>
-							<div class="v-line"></div>
+							<div class="v-line_link1"></div>
 						</div>
-						<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="col-md-4 col-sm-4 col-xs-12 w-25 mx-auto">
 							<li>
 								<a href="Github.html">Github</a>
 							</li>
-							<div class="v-line"></div>
-						</div>
-						<div class="col-md-4 col-sm-4 col-xs-12">
+							<div class="v-line_link2"></div>
+						</div>  
+						<div class="col-md-4 col-sm-4 col-xs-12 w-25 mx-auto li">
 							<li>
 								<a href="Contacto.html">Contacto</a>
 							</li>
 						</div>
 					</div>
-						
-				
+				</div>
+				<div class="container text-center">
+					<span>&copy; <time>2022</time> Diego Ramirez - Maquetador web</span>
+				</div>	
 			</footer>
 				
 		<!--bootstrap js-->
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-
-			
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 	</body>
 	</html>
 
