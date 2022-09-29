@@ -2,25 +2,61 @@ body{
 	background: url("../imagenes/background-image.jpg") fixed;
 	background-size: cover;
 }
-.header{
-	height: auto;
-	margin-top: -200px;
-	padding-top: 35px;
-	padding-bottom: 35px;
-}
 
-	.header .logo{
-		background: url("../imagenes/logo_portafolio.png");
-		background-repeat: no-repeat;
-		display: inline-block;
-		margin: auto;
-		height: 56px;
-		width: 256px;
-	}
-	.col-nav{
-		width: 470px;
-		position: relative;	
-	}
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+.navbar{
+	height: 100px;
+	background: rgba(255, 255, 255, 0.1);
+}
+.nav-link{
+	width: 154%;
+}
+.navbar-dark .navbar-nav .nav-link{
+	color: white;
+	font-family: 'Lato', sans-serif;
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus{
+	 color: white;
+}
+  .offcanvas-collapse {
+    position: fixed;
+    top: 100px; /* Height of navbar */
+    bottom: 0;
+    right: 100%;
+    /*left: 100%; es un margin-left e indica cuan a la derecha quiero que esté mi nav cuando toco el botón para que aparezca*/
+    width: 75%;
+    padding-top: 8px;
+    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 23%;
+    overflow-y: auto;
+    visibility: hidden;
+    background: rgba(255,255,255, 0.1);
+    transition: transform .2s, visibility .2s /*visibility */ 	;
+    height: 40%;
+	border-radius: 0% 0% 1% 0%;
+  }
+  .offcanvas-collapse.open {
+    visibility: visible;
+    transform: translateX(100%)
+    /*transform: translateX(-100%);sigue siendo un margin-left y si disminuyo el porcentaje se va mas a derecha*/
+  }
+  .navbar-toggler-icon{
+  	position: absolute;
+  	right: 82%;
+  	top: 35%;
+  
+}
+      hr{
+      	background: rgb(0, 170, 152);
+      	opacity: 1;
+      	width: 132%;
+      	margin-bottom: 5px;
+      	margin-top: 5px;
+      }
 		.container li a{
 			color: white;
 			display: block;
@@ -59,28 +95,17 @@ body{
 		}
 .sobre_mi{
 	margin-bottom: 200px;
-	margin-top: 200px;
+	margin-top: 135px;
 	text-align: center;
 	}
 	.sobre_mi article img{
-	border-radius: 4px;
+	border-radius: 1% 1% 1% 1%;
 	filter: grayscale(80%);
-	height: 490px;	
-	margin-bottom: 100px;
-	 
+	height: 49%;	
+	margin-bottom: 100px;	 
 	z-index: -2;
 	position: relative;
-	}
-	.fondo{
-		background-image: linear-gradient(to left, rgba(255,255,255,0), rgba(0,0,0));
-		height: 490px;
-		border-radius: 4px;
-		width: 335px;
-		z-index: -2;
-		position: absolute;
-		left: 50%;
-		margin-left: -168px;
-		top: 200px;
+	width: 90%;
 	}
 		.sobre_mi article h2{
 			color: white;
@@ -281,6 +306,3 @@ footer{
 		font-size: 16px;
 	}
 	/*portátiles*/
-	@media screen (min-width: 576px){
-		
-	}
