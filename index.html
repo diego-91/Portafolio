@@ -30,12 +30,12 @@
 	<body>
 		<nav class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
       <div class="container-fluid">
-        <a class="navbar-brand mx-auto" width="100px" href="index.html"><img src="imagenes/logo_responsive.png" width="130" height="30" ></a>
+        <a class="navbar-brand" href="index.html"></a>
         <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         <ul class="navbar-nav me-auto mb-lg-0">
            <li class="nav-item">
              <a class="nav-link" href="#">Sobre mi</a>
            </li>
@@ -57,12 +57,11 @@
     </nav>
 			<section class="sobre_mi">
 				<article>
-					 <img src="imagenes/foto.jpg" >
-					<div class="container text-center">
+					 <img src="imagenes/foto.jpg">
+					<div class="container">
 						<h2>Hola!</span> Soy <span>Diego</span><br>Maquetador web</h2>		
 					</div>
-					<div class="container-fluid descripción text-center ">
-						<div class="container ">
+					<div class="container-fluid descripción">
 							<p>
 								Hola! soy Diego y soy maquetador web. Soy de Buenos Aires, Argentina y estoy en el mundo IT hace 5 años. Desarrollo sitios web de cualquier tamaño y contenido usando herramientas front-end. Pongo mi creatividad y conocimientos al servicio de quien me necesite amoldandome a sus preferencias.
 							</p>
@@ -71,28 +70,26 @@
 					</div>
 				</article>
 			</section>
-			<section class="container contenedor_habilidades text-center">                           				
-        <h2>Algunas de mis habilidades son</h2>
-					<div class="container articles ">
+			<section class="container contenedor_habilidades text-center">  <h2>Algunas de mis habilidades son</h2>
+					<div class="container_articles ">
 						<div class="row habilidades">
-							<article class="col-md-4 col-sm-4 col-xs-12">
+							<article class="col-12 col-lg-4">
 								<h3>HTML5</h3>
-								<img src="imagenes/logo_html5.png" alt="html5"/>
-								<div class="v-line1"></div>
+								<img class="logo_html5" src="imagenes/logo_html5.png" alt="html5"/>
+								<div class="v-line1 mx-auto"></div>
 							</article>
-							<article class="css3 col-md-4 col-sm-4 col-xs-12">
+							<article class="css3 col-12 col-lg-4">
 								<h3>CSS3</h3>
-								<img src="imagenes/logo_css3.png"/>
-								<div class="v-line2"></div>
+								<img class="logo_css3" src="imagenes/logo_css3.png"/>
+								<div class="v-line2 mx-auto"></div>
 							</article>						
-							<article class="bootstrap col-md-4 col-sm-4 col-xs-12">
+							<article class="bootstrap col-12 col-lg-4">
 								<h3>BOOTSTRAP</h3>
-								<img src="imagenes/logo_bootstrap.png"/>
+								<img class="logo_bootstrap5" src="imagenes/logo_bootstrap.png"/>
 							</article>
 						</div>
 						<a class="ver_mas" href="habilidades.html">Ver más</a>
-					</div>
-					
+					</div>				
 			</section>
 			<section class="mis_proyectos text-center">
 				<article>
@@ -101,7 +98,7 @@
 					  <div class="carousel-inner">
 					    <div class="carousel-item active ">
 					    	<div class="container_image">
-					      		<img src="imagenes/imagen_proyecto.png" alt="Proyecto"><a class="titulo_proyecto" href="index.html">DE INSTRUMENTOS.COM</a>
+					      		<img src="imagenes/imagen_proyecto.png" alt="Proyecto"><a href="index.html">DE INSTRUMENTOS.COM</a>
 					  		</div>
 					    </div>
 					  </div>
@@ -120,25 +117,24 @@
 				<article>
 					<h2>Hablamos?</h2>
 					<p><a href="hablamos.html">Clickeá acá</a></p>
-				</article>
-				
+				</article>				
 			</section>
-			<footer class="pt-5">	
-				<div class="container-fluid d-flex text-center justify-content-center mb-5 mt-4">	
-					<div class="row  mb-4 mt-2 final_links">
-						<div class="col-md-4 col-sm-4 col-xs-12 w-25 mx-auto">
+			<footer class="pt-5 pb-3">	
+				<div class="container-fluid">	
+					<div class="row final_links">
+						<div class="col-6 col-md-4 text-center mb-4">
 							<li>
 								<a href="Home.html">Home</a>
 							</li>
 							<div class="v-line_link1"></div>
 						</div>
-						<div class="col-md-4 col-sm-4 col-xs-12 w-25 mx-auto">
+						<div class="col-6 col-md-4 text-center">
 							<li>
 								<a href="Github.html">Github</a>
 							</li>
 							<div class="v-line_link2"></div>
 						</div>  
-						<div class="col-md-4 col-sm-4 col-xs-12 w-25 mx-auto li">
+						<div class="col-6 col-md-4 text-center mx-auto mb-5 li">
 							<li>
 								<a href="Contacto.html">Contacto</a>
 							</li>
