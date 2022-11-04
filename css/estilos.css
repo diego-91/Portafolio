@@ -304,6 +304,7 @@ footer{
 			top: 22%;
 		}
 	}
+	/*Tablets*/
 	@media (min-width: 768px){
 		body{
 			padding-top: 50px;
@@ -345,6 +346,7 @@ footer{
 			width: 0.1%;
 		}
 	}
+	/*escritorio*/
 	@media (min-width: 992px){
 		body{
 			padding-top: 120px;
@@ -466,6 +468,7 @@ footer{
 			font-size: 15px;
 		}
 }
+/*pantalla de escritorio mas grande*/
 @media (min-width: 1200px){
 	.contenedor_habilidades .v-line1{
 		right: 47%;
